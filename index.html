@@ -1,0 +1,391 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Elsa's Berry Bar</title>
+    <meta name="description"
+        content="Handmade cakes and chocolate covered strawberries — cozy, small-batch treats for your sweetest moments." />
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Fraunces:opsz,wght@9..144,600;9..144,700&family=Inter:wght@400;500;600&display=swap"
+        rel="stylesheet">
+    <link rel="stylesheet" href="styles.css" />
+</head>
+
+<body>
+    <a class="skip" href="#main">Skip to content</a>
+
+    <header class="header" id="top">
+        <div class="container header__inner">
+            <a class="brand" href="#top" aria-label="Home">
+                <span class="brand__mark">
+                    <img class="brand__logo" src="images/IG _ FB - @elsasberrybar - 1-Picsart-BackgroundRemover.PNG" alt="Elsa's Berry Bar logo" />
+                </span>
+                <span class="brand__text">
+                    <span class="brand__name">Elsa's Berry Bar</span>
+                    <span class="brand__tag">Custom Cakes • Chocolate Covered Treats</span>
+                </span>
+            </a>
+
+            <button class="navToggle" aria-label="Open menu" aria-expanded="false">
+                <span class="navToggle__line"></span>
+                <span class="navToggle__line"></span>
+                <span class="navToggle__line"></span>
+            </button>
+
+            <nav class="nav" aria-label="Primary">
+                <a href="#menu">Treats</a>
+                <a href="#about">About</a>
+                <a href="#reviews">Love Notes</a>
+                <a class="btn btn--small" href="#contact">Contact</a>
+            </nav>
+        </div>
+    </header>
+
+    <main id="main">
+        <!-- Hero -->
+        <section class="hero">
+            <div class="container hero__grid">
+                <div class="hero__copy reveal">
+                    <p class="pill">Homemade • Custom • Made to order</p>
+                    <h1>
+                        <span class="accent">you are what you eat, so eat something sweet!</span>
+                    </h1>
+                    <p class="lead">
+                        Custom treats for birthdays, celebrations, or just because!
+                        Made fresh for pickup or local delivery.
+                    </p>
+
+                    <div class="hero__cta">
+                        <a class="btn" href="#contact">Order / Inquire</a>
+                        <a class="btn btn--ghost" href="#menu">See Treats</a>
+                    </div>
+
+                    <div class="hero__facts">
+                        <div class="fact">
+                            <span class="fact__num"> 2 hour</span>
+                            <span class="fact__label">typical response time</span>
+                        </div>
+                        <div class="fact">
+                            <span class="fact__num">Custom</span>
+                            <span class="fact__label">flavors & themes</span>
+                        </div>
+                        <div class="fact">
+                            <span class="fact__num">Local</span>
+                            <span class="fact__label">pickup / delivery</span>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="hero__card reveal">
+                    <div class="carousel" aria-label="Cake gallery">
+                        <div class="carousel__track" data-carousel>
+                            <figure class="carousel__slide is-active">
+                                <img src="images/IMG_7788.jpeg" alt="Pink buttercream cake with berries"
+                                    loading="lazy" />
+                            </figure>
+                            <figure class="carousel__slide">
+                                <img src="images/IMG_5290.jpeg" alt="Chocolate cake with strawberry filling"
+                                    loading="lazy" />
+                            </figure>
+                            <figure class="carousel__slide">
+                                <img src="images/C4FC9EE0-E0EE-4D58-BD1B-69E3617F5BE9.JPG" alt="Churro cheesecake slice with cinnamon"
+                                    loading="lazy" />
+                            </figure>
+                        </div>
+
+                        <button class="carousel__btn prev" type="button" aria-label="Previous photo"
+                            data-carousel-prev>←</button>
+                        <button class="carousel__btn next" type="button" aria-label="Next photo"
+                            data-carousel-next>→</button>
+
+                        <div class="carousel__dots" role="tablist" aria-label="Select a photo">
+                            <button class="carousel__dot is-active" type="button" aria-label="Photo 1"
+                                data-carousel-dot="0" aria-current="true"></button>
+                            <button class="carousel__dot" type="button" aria-label="Photo 2"
+                                data-carousel-dot="1"></button>
+                            <button class="carousel__dot" type="button" aria-label="Photo 3"
+                                data-carousel-dot="2"></button>
+                        </div>
+                    </div>
+
+                    <a class="btn btn--ghost hero__see-more" href="https://instagram.com/elsasberrybar" target="_blank"
+                        rel="noreferrer">See more</a>
+
+                    <div class="hero__badge">
+                        <span class="dot"></span>
+                        <span>Taking orders this week</span>
+                    </div>
+                </div>
+            </div>
+
+            <div class="hero__bg" aria-hidden="true">
+                <div class="blob b1"></div>
+                <div class="blob b2"></div>
+                <div class="blob b3"></div>
+            </div>
+        </section>
+
+        <!-- Menu -->
+        <section class="section" id="menu">
+            <div class="container">
+                <div class="section__head reveal">
+                    <h2>Treats & Pricing</h2>
+                    <p>Simple, cozy favorites — with plenty of room for custom details.</p>
+                </div>
+
+                <div class="cards">
+                    <article class="card reveal">
+                        <h3>Custom Cakes</h3>
+                        <p class="muted">Sizes: 6", 8", 10" and more • Buttercream or Whipped frosting</p>
+                        <ul class="list">
+                            <li><span>Classic Vanilla</span><span class="price">From $40</span></li>
+                            <li><span>Chocolate</span><span class="price">From $40</span></li>
+                            <li><span>Strawberry</span><span class="price">From $40</span></li>
+                            <li><span>Red Velvet</span><span class="price">From $40</span></li>
+                        </ul>
+                        <p class="note">Add-ons: florals, toppers, themes, fillings, and tres leches.</p>
+                    </article>
+
+                    <article class="card reveal">
+                        <h3>Chocolate Covered Strawberries</h3>
+                        <p class="muted">Milk / dark / white • drizzle & toppings</p>
+                        <ul class="list">
+                            <li><span>Original dozen</span><span class="price">From $35</span></li>
+                            <li><span>Deluxe dozen</span><span class="price">From $40</span></li>
+                            <li><span>Custom dozen</span><span class="price">From $40</span></li>
+                            <li><span>Breakable heart</span><span class="price">From $35</span></li>
+                            <li><span>Chocolate covered oreos, pretzels, etc.</span><span class="price">From $25</span></li>
+                        </ul>
+                        <p class="note">Made fresh — best enjoyed same day.</p>
+                    </article>
+
+                    <article class="card reveal">
+                        <h3>Other Treats</h3>
+                        <p class="muted">Great for parties and gifting</p>
+                        <ul class="list">
+                            <li><span>Churro Cheesecake</span><span class="price">From $40</span></li>
+                            <li><span>Cupcakes (by the dozen)</span><span class="price">From $25</span></li>
+                            <li><span>Flan or Chocoflan</span><span class="price">From $40</span></li>
+                            <li><span>Gelatinas or Mini Gelatinas </span><span class="price">From $30</span></li>
+                        </ul>
+                        <p class="note">Don't see what you're looking for? Let's chat!</p>
+                    </article>
+                </div>
+
+                <div class="callout reveal">
+                    <div>
+                        <h3>Want exact pricing?</h3>
+                        <p class="muted">Tell me your date, serving size, and theme — I’ll reply with options.</p>
+                    </div>
+                    <a class="btn" href="#contact">Message me</a>
+                </div>
+            </div>
+        </section>
+
+        <!-- About -->
+        <section class="section section--soft" id="about">
+            <div class="container about">
+                <div class="about__copy reveal">
+                    <h2>Hi, I’m <span class="accent">Elsa</span> 👋</h2>
+                    <p>
+                        I run a tiny home bakery focused on cozy, nostalgic flavors and pretty details.
+                        Everything is homemade and made to order so it tastes as good as it looks.
+                    </p>
+                    <div class="chips">
+                        <span class="chip">Custom designs</span>
+                        <span class="chip">Fresh ingredients</span>
+                        <span class="chip">Careful packaging</span>
+                    </div>
+
+                    <div class="steps">
+                        <div class="step">
+                            <span class="step__num">1</span>
+                            <div>
+                                <h4>Send your inspo</h4>
+                                <p class="muted">Date, servings, flavor, and any inspo photos.</p>
+                            </div>
+                        </div>
+                        <div class="step">
+                            <span class="step__num">2</span>
+                            <div>
+                                <h4>Confirm details</h4>
+                                <p class="muted">I’ll share pricing + timeline.</p>
+                            </div>
+                        </div>
+                        <div class="step">
+                            <span class="step__num">3</span>
+                            <div>
+                                <h4>Pick up & enjoy!</h4>
+                                <p class="muted">Wrapped with care for your celebration.</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="about__panel reveal">
+                    <h3>Popular treats</h3>
+                    <div class="flavors">
+                        <div class="flavor"><span>🍰</span>
+                            <p>Vanilla tres leches</p>
+                        </div>
+                        <div class="flavor"><span>🍫</span>
+                            <p>Choc cake with strawberry filling</p>
+                        </div>
+                        <div class="flavor"><span>🍓</span>
+                            <p>Churro Cheesecake</p>
+                        </div>
+                        <div class="flavor"><span>❤️</span>
+                            <p>Cookie butter cake</p>
+                        </div>
+                    </div>
+
+                    <div class="miniCard">
+                        <p class="muted"><strong>Tip:</strong> For weekends, order by Tuesday for best availability.
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Reviews -->
+        <section class="section" id="reviews">
+            <div class="container">
+                <div class="section__head reveal">
+                    <h2>Love Notes</h2>
+                    <p>Sweet words from sweet people.</p>
+                </div>
+
+                <div class="quotes">
+                    <figure class="quote reveal">
+                        <blockquote>“The cake was AMAZING!! We ate it up.”</blockquote>
+                        <figcaption>— Ilianna</figcaption>
+                    </figure>
+                    <figure class="quote reveal">
+                        <blockquote>“Girl, the cake was so good, thank you so much.”</blockquote>
+                        <figcaption>— Casssandra</figcaption>
+                    </figure>
+                    <figure class="quote reveal">
+                        <blockquote>“Everyone asked where we ordered from. 10/10 for parties!”</blockquote>
+                        <figcaption>— Maria</figcaption>
+                    </figure>
+                </div>
+            </div>
+        </section>
+
+        <!-- Contact -->
+        <section class="section section--soft" id="contact">
+            <div class="container contact">
+                <div class="contact__copy reveal">
+                    <h2>Let’s make something <span class="accent">sweet</span>.</h2>
+                    <p class="muted">
+                        Instagram is best for orders. You can also message me on my other socials and email — I reply as soon as I’m out of the
+                        kitchen!
+                    </p>
+
+                    <div class="contact__tiles">
+                        <a class="tile" id="emailLink"
+                            href="mailto:elsanmdra@gmail.com?subject=Order%20Inquiry%20-%20Sweet%20%26%20Cozy&body=Hi!%20I%E2%80%99d%20love%20to%20order%3A%0A%0AEvent%20date%3A%0AServing%20size%3A%0AItem%20(cake%2Fstrawberries%2Fother)%3A%0AFlavor%3A%0ATheme%2Fnotes%3A%0A%0AThank%20you!">
+                            <span class="tile__icon" aria-hidden="true">✉️</span>
+                            <span class="tile__text">
+                                <span class="tile__title">Email me</span>
+                                <span class="tile__sub">elsanmdra@gmail.com</span>
+                            </span>
+                        </a>
+
+                        <a class="tile" href="https://instagram.com/elsasberrybar" target="_blank" rel="noreferrer">
+                            <span class="tile__icon" aria-hidden="true">📷</span>
+                            <span class="tile__text">
+                                <span class="tile__title">Instagram</span>
+                                <span class="tile__sub">@elsasberrybar</span>
+                            </span>
+                        </a>
+
+                        <a class="tile" href="https://www.tiktok.com/@elsamdra" target="_blank" rel="noreferrer">
+                            <span class="tile__icon" aria-hidden="true">🎥</span>
+                            <span class="tile__text">
+                                <span class="tile__title">TikTok</span>
+                                <span class="tile__sub">@elsamdra</span>
+                            </span>
+                        </a>
+
+                        <a class="tile" href="https://www.facebook.com/elsa.moody.71?mibextid=wwXIfr&rdid=zaZAQNqnxaIFa7be&share_url=https%3A%2F%2Fwww.facebook.com%2Fshare%2F1AbH2PyXpm%2F%3Fmibextid%3DwwXIfr#" target="_blank" rel="noreferrer">
+                            <span class="tile__icon" aria-hidden="true">💬</span>
+                            <span class="tile__text">
+                                <span class="tile__title">Facebook</span>
+                                <span class="tile__sub">Elsa Madera</span>
+                            </span>
+                        </a>
+                    </div>
+
+                    <div class="hours">
+                        <div class="hours__row">
+                            <span>Pickup hours</span>
+                            <span class="muted">Flexible availability</span>
+                        </div>
+                        <div class="hours__row">
+                            <span>Location</span>
+                            <span class="muted">Grand Prairie, Texas</span>
+                        </div>
+                    </div>
+                </div>
+
+                <form class="form reveal" id="contactForm">
+                    <h3>Contact Form</h3>
+
+                    <label>
+                        <span>Name</span>
+                        <input name="name" type="text" placeholder="Your name" autocomplete="name" required />
+                    </label>
+
+                    <label>
+                        <span>Email</span>
+                        <input name="email" type="email" placeholder="you@example.com" autocomplete="email" required />
+                    </label>
+
+                    <label>
+                        <span>What are you looking for?</span>
+                        <select name="item" required>
+                            <option value="" disabled selected>Select one</option>
+                            <option>Cake</option>
+                            <option>Chocolate Covered Strawberries</option>
+                            <option>Churro Cheesecake</option>
+                            <option>Other</option>
+                        </select>
+                    </label>
+
+                    <label>
+                        <span>Details</span>
+                        <textarea name="details" rows="5" placeholder="Date, servings, flavor, theme, and any notes…"
+                            required></textarea>
+                    </label>
+
+                    <button class="btn" type="submit">
+                        Send via email
+                        <span class="btn__spark" aria-hidden="true">→</span>
+                    </button>
+
+                    <p class="form__note muted">
+                        This form opens your email app with a pre-filled message (no account setup needed).
+                    </p>
+
+                    <div class="toast" id="toast" role="status" aria-live="polite" aria-atomic="true"></div>
+                </form>
+            </div>
+        </section>
+    </main>
+
+    <footer class="footer">
+        <div class="container footer__inner">
+            <p>© <span id="year"></span> Elsa's Berry Bar ❤️</p>
+            <a class="toTop" href="#top" aria-label="Back to top">↑</a>
+        </div>
+    </footer>
+
+    <script src="app.js"></script>
+</body>
+
+</html>
