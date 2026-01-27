@@ -30,6 +30,8 @@
         if (e.key === "Escape") closeNav();
     });
 
+    const prefersReduced = window.matchMedia("(prefers-reduced-motion: reduce)").matches;
+
     // Reveal on scroll
     const revealEls = qsa(".reveal");
     const io = new IntersectionObserver(
@@ -44,6 +46,19 @@
         { threshold: 0.12 }
     );
     revealEls.forEach((el) => io.observe(el));
+
+    // Back to top
+    const toTop = qs(".toTop");
+    const scrollToTop = () => {
+        const behavior = prefersReduced ? "auto" : "smooth";
+        document.documentElement.scrollTo({ top: 0, left: 0, behavior });
+        document.body.scrollTo({ top: 0, left: 0, behavior });
+        window.scrollTo({ top: 0, left: 0, behavior });
+    };
+    toTop?.addEventListener("click", (e) => {
+        e.preventDefault();
+        scrollToTop();
+    });
 
     // Hero carousel
     const carousel = qs(".carousel");
@@ -108,7 +123,7 @@
         const item = String(data.get("item") || "").trim();
         const details = String(data.get("details") || "").trim();
 
-        const to = "elsanmdra@gmail.com"; // <-- change this
+        const to = "elsasberrybar@gmail.com"; // <-- change this
         const subject = encodeURIComponent(`Order Inquiry - ${item || "Treats"}`);
         const body = encodeURIComponent(
             `Hi! My name is ${name}.\n\n` +
@@ -145,7 +160,6 @@
     }
 
     // Only enable if not reduced motion
-    const prefersReduced = window.matchMedia("(prefers-reduced-motion: reduce)").matches;
     if (!prefersReduced && card) {
         card.addEventListener("mousemove", parallax);
         card.addEventListener("mouseleave", resetParallax);
